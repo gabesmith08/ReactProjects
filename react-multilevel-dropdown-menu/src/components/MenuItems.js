@@ -1,22 +1,20 @@
-export const menuItems = [
-    {
-        title: "Home"
-    },
-    {
-        title: "Services",
-        submenu: [
-            {
-                title: "web design"
-            },
-            {
-                title: "web development"
-            },
-            {
-                title: "SEO"
-            }
-        ]
-    },
-    {
-        title: "About"
-    }
-];
+import Dropdown from "./Dropdown";
+
+const MenuItems = ({ items }) => {
+  return (
+    <li className="menu-items">
+      {items.submenu ? (
+        <>
+          <button type="button" aria-haspopup="menu">
+            {items.title}{" "}
+          </button>
+          <Dropdown submenus={items.submenu} />
+        </>
+      ) : (
+        <a href="/#">{items.title}</a>
+      )}
+    </li>
+  );
+};
+
+export default MenuItems;
