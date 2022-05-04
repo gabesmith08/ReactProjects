@@ -1,3 +1,5 @@
+--- This is a small reusable multi drop down menus for the nav that I can use in other projects ---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
