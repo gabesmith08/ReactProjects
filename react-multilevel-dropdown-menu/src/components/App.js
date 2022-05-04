@@ -1,3 +1,5 @@
+import Navbar from "./Navbar";
+
 const App = () => {
   return (
     <header>
@@ -5,6 +7,7 @@ const App = () => {
         <a href="/#" className="logo">
           Logo
         </a>
+        <Navbar />
       </div>
     </header>
   );
