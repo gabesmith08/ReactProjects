@@ -10,6 +10,22 @@ export const menuItems = [
       },
       {
         title: "web development",
+        submenu: [
+          {
+            title: "Frontend",
+          },
+          {
+            title: "Backend",
+            submenu: [
+              {
+                title: "NodeJS",
+              },
+              {
+                title: "PHP",
+              },
+            ],
+          },
+        ],
       },
       {
         title: "SEO",
